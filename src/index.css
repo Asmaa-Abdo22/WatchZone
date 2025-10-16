@@ -1,27 +1,31 @@
 @import "tailwindcss";
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../.flowbite-react/class-list.json";
 
 @custom-variant dark (&:where(.dark, .dark *));
 
 @layer base {
   /* 🌞 Light Mode Colors */
   :root {
-    --bg-main: #ffffff;
-    --bg-card: #f9f9f9;
-    --text-primary: #0f0f0f;
-    --text-secondary: #606060;
-    --border-color: #e5e5e5;
-    --youtube-red: #ff0000;
-  }
+  --bg-main: #ffffff;
+  --bg-card: #f9f9f9;
+  --bg-feed: #f2f2f2; 
+  --text-primary: #0f0f0f;
+  --text-secondary: #606060;
+  --border-color: #e5e5e5;
+  --watchzone-red: #ff0000;
+}
 
-  /* 🌙 Dark Mode Colors  */
-  .dark {
-    --bg-main: #0f0f0f;
-    --bg-card: #1f1f1f;
-    --text-primary: #ffffff;
-    --text-secondary: #aaaaaa;
-    --border-color: #303030;
-    --youtube-red: #ff0000;
-  }
+/* 🌙 الوضع الداكن */
+.dark {
+  --bg-main: #0f0f0f;
+  --bg-card: #1f1f1f;
+  --bg-feed: #181818; 
+  --text-primary: #ffffff;
+  --text-secondary: #aaaaaa;
+  --border-color: #1f1e1e;
+  --watchzone-red: #ff0000;
+}
 
   body {
     background-color: var(--bg-main);
@@ -29,3 +33,4 @@
     transition: background-color 0.3s, color 0.3s;
   }
 }
+

@@ -37,7 +37,7 @@ const Navbarr = ({toggleSidebar}) => {
         >
           <Search className="text-gray-500" size={18} />
           <input
-            type="text"
+            type="search"
             placeholder="Search..."
             className="grow  border-0 outline-0 focus:outline-0 focus:border-0 placeholder-gray-500"
           />
@@ -51,7 +51,7 @@ const Navbarr = ({toggleSidebar}) => {
         </div>
 
         <button
-          className="cursor-pointer pr-4  ml-4  sm:mt-4 md:mt-0"
+          className="cursor-pointer pr-4  ml-4  pt-1 md:pt-0"
           onClick={toggleTheme}
         >
           {theme === "dark" ? (

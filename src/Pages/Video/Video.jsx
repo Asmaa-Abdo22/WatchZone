@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import PlayVideo from "../../components/PlayVideo/PlayVideo";
 
 const Video = () => {
-  return <>
-  video
-  </>
-}
+  return (
+    <>
+      <div className="video-container">
+        <PlayVideo />
+      </div>
+    </>
+  );
+};
 
-export default Video
+export default Video;

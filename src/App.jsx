@@ -3,8 +3,10 @@ import Navbarr from "./components/Navbar/Navbarr";
 import LayOut from "./components/LayOut/LayOut";
 import Home from "./Pages/Home/Home";
 import Video from "./Pages/Video/Video";
-
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { Toaster } from "react-hot-toast";
 export default function App() {
+  const myClient = new QueryClient();
   const myRouter = createBrowserRouter([
     {
       path: "/",
@@ -26,7 +28,10 @@ export default function App() {
 
   return (
     <>
-      <RouterProvider router={myRouter} />
+      <QueryClientProvider client={myClient}>
+        <RouterProvider router={myRouter} />
+      </QueryClientProvider>
+      <Toaster position="top-center"/>
     </>
   );
 }

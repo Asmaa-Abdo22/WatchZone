@@ -3,16 +3,6 @@
 WatchZone is a modern video streaming platform clone built with **React**, **Tailwind CSS**, and **React Query**. It allows users to browse, search, and watch videos, view channel information, and explore recommended videos.
 
 ---
-## 🚀 Live Demo 
-🔗 [Click here to view the demo](https://asmaa-abdo22.github.io/To-Do-App-js-/) 
-
-  ## 📸 Screenshots
-  
-  ### 🏠 Home Page - Trending Videos
-  ![Home Screenshot](https://github.com/user-attachments/assets/6aa389ef-b672-4541-91ab-0deac7867d9e)
-
-  ### 🎬 Video Detail Page
-  ![Video Details Page Screenshot](https://github.com/user-attachments/assets/912cfcbd-8c28-4f1c-b568-5ee10bd71c4e)
 
 
 ## Features

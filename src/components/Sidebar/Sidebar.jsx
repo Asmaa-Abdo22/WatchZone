@@ -53,8 +53,8 @@ const Sidebar = ({ isCollapsed, setCategory, category }) => {
 
   return (
     <>
-      <div className="sidebar bg-[var(--bg-main)] px-3 pb-11">
-        <div className="shortcutLinks">
+      <div className="sidebar bg-[var(--bg-main)] px-2 pb-11">
+        <div className="shortcutLinks pt-7">
           {links.map((item, index) => (
             <div
               key={index}
@@ -70,14 +70,14 @@ const Sidebar = ({ isCollapsed, setCategory, category }) => {
               }`}
             >
               <item.icon size={20} />
-              {!isCollapsed ? <p>{item.name}</p> : ""}
+              {!isCollapsed ? <p className="hidden  md:block">{item.name}</p> : ""}
             </div>
           ))}
         </div>
 
         <div className="subscribed mt-4 border-top border-r-0 border-l-0 border-b-0 border-1 border-[var(--border-color)] ">
           {!isCollapsed ? (
-            <h3 className="font-bold pt-3">Subscriptions</h3>
+            <h3 className="font-bold pt-3 hidden md:block">Subscriptions</h3>
           ) : (
             ""
           )}
@@ -93,7 +93,7 @@ const Sidebar = ({ isCollapsed, setCategory, category }) => {
                 rounded
                 size="xs"
               />
-              {!isCollapsed ? <p>{item.name}</p> : ""}
+              {!isCollapsed ? <p className="hidden md:block">{item.name}</p> : ""}
             </div>
           ))}
         </div>

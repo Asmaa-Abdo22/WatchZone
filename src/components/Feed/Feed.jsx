@@ -9,6 +9,18 @@ import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
 
 const Feed = ({ category }) => {
+  const formatNumber = (num) => {
+  if (!num) return "0";
+
+  if (num >= 1_000_000) {
+    return (num / 1_000_000).toFixed(1).replace(/\.0$/, "") + "M";
+  }
+  if (num >= 1_000) {
+    return (num / 1_000).toFixed(1).replace(/\.0$/, "") + "K";
+  }
+  return num.toString();
+};
+
   dayjs.extend(relativeTime);
   const fetchCategories = async () => {
     try {
@@ -45,7 +57,7 @@ const Feed = ({ category }) => {
     <>
       {data ? (
         <>
-          <div className="feed mb-7 grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-6 pt-4 bg-[var(--bg-feed)]">
+          <div className="feed mb-7 grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-2 pt-4 bg-[var(--bg-feed)]">
             {data.map((video, index) => (
               <Link to={`/video/${video.snippet.categoryId}/${video.id}`} key={index}>
                 <div className="flex flex-col rounded-xl h-full overflow-hidden cursor-pointer">
@@ -73,7 +85,7 @@ const Feed = ({ category }) => {
                         {video.snippet?.channelTitle}
                       </p>
                       <p className="text-[12px] text-[var(--text-secondary)] mt-[7px]">
-                        {video.statistics?.viewCount} views •{" "}
+                        {formatNumber(video.statistics?.viewCount)} views •{" "}
                        <span className="ml-4"> {dayjs(video.snippet?.publishedAt).fromNow()}</span>
                       </p>
                     </div>

@@ -31,7 +31,7 @@ export default function App() {
       <QueryClientProvider client={myClient}>
         <RouterProvider router={myRouter} />
       </QueryClientProvider>
-      <Toaster position="top-center"/>
+      <Toaster position="top-center" />
     </>
   );
 }

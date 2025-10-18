@@ -1,6 +1,5 @@
 import { ThumbsUp, ThumbsDown, Share2, Bookmark } from "lucide-react";
 import { Avatar } from "flowbite-react";
-import myVideo from "../../assets/videos/11949507_3840_2160_60fps.mp4";
 import axiosInstance from "../../api/axiosInstance";
 import { useQuery } from "@tanstack/react-query";
 import Loading from "../Loading/Loading";

@@ -53,7 +53,7 @@ const Sidebar = ({ isCollapsed, setCategory, category }) => {
 
   return (
     <>
-      <div className="sidebar bg-[var(--bg-main)] px-2 pb-11 pt-12 md:pt-0">
+      <div className="sidebar bg-[var(--bg-main)] px-2 pb-11 pt-20 md:pt-0">
         <div className="shortcutLinks pt-7">
           {links.map((item, index) => (
             <div

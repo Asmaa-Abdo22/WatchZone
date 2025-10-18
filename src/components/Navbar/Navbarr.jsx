@@ -89,7 +89,7 @@ const Navbarr = ({ toggleSidebar }) => {
           </button>
         </div>
 
-        <div className="rightIcons flex justify-center items-center gap-3 text-[var(--text-secondary)]">
+        <div className="rightIcons flex justify-center items-center my-2 gap-3 text-[var(--text-secondary)]">
           <Mic size={18} />
           <Grid size={18} />
           <Bell size={18} />

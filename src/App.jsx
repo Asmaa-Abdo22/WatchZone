@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, createHashRouter, RouterProvider } from "react-router-dom";
 import Navbarr from "./components/Navbar/Navbarr";
 import LayOut from "./components/LayOut/LayOut";
 import Home from "./Pages/Home/Home";
@@ -7,7 +7,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "react-hot-toast";
 export default function App() {
   const myClient = new QueryClient();
-  const myRouter = createBrowserRouter([
+  const myRouter = createHashRouter([
     {
       path: "/",
       element: <LayOut />,

@@ -1,16 +1,78 @@
-# React + Vite
+# 🎬 WatchZone - Video Streaming Platform Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+WatchZone is a modern video streaming platform clone built with **React**, **Tailwind CSS**, and **React Query**. It allows users to browse, search, and watch videos, view channel information, and explore recommended videos.
 
-Currently, two official plugins are available:
+---
+## 🚀 Live Demo 
+🔗 [Click here to view the demo](https://asmaa-abdo22.github.io/To-Do-App-js-/) 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  ## 📸 Screenshots
+  
+  ### 🏠 Home Page - Trending Videos
+  ![Home Screenshot](https://github.com/user-attachments/assets/6aa389ef-b672-4541-91ab-0deac7867d9e)
 
-## React Compiler
+  ### 🎬 Video Detail Page
+  ![Video Details Page Screenshot](https://github.com/user-attachments/assets/912cfcbd-8c28-4f1c-b568-5ee10bd71c4e)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Responsive design with **light** and **dark** modes.
+- Video playback with embedded video player.
+- Fetch video details including views, likes, description, and publishing date.
+- Display channel information with subscriber count.
+- Comments section with avatars, likes, and replies.
+- Search functionality with live results.
+- Recommended videos sidebar with clickable video previews.
+- Mobile-friendly navigation and sidebar.
+- Smooth scrolling to top when switching videos.
+
+---
+
+## Tech Stack
+
+- **Frontend:** React, Tailwind CSS, Flowbite, React Router DOM
+- **State Management:** React Query
+- **API:** Axios
+- **Icons:** Lucide React
+- **Utilities:** Day.js
+- **Notifications:** React Hot Toast
+
+---
+
+## Folder Structure
+
+   ```bash
+watchzone-clone/
+│
+├─ public/                 
+├─ src/
+│  ├─ api/                  # Axios instance & API functions
+│  ├─ assets/               # Images, videos, icons
+│  ├─ components/           # Reusable components (Navbar, Sidebar, VideoCard, etc.)
+│  ├─ pages/                # Page components (Home, VideoPlayer, SearchResults)             
+│  ├─ App.jsx               # Main App component
+│  └─ main.jsx              # Entry point
+├─ .env                     # Environment variables
+├─ package.json
+└─ README.md
+ ```
+
+## Key Components
+- Navbar: Search input, theme toggle, microphone, notifications, and avatar
+- Sidebar: Categories navigation and collapse/expand functionality
+- PlayVideo: Video player, details, channel info, description, comments, and recommended videos
+- Loading: Loading spinner for async fetch operations
+- ThemeToggle: Light and dark mode switching with localStorage persistence
+
+## Usage
+- Browse the homepage for trending videos.
+- Click any video to watch it with details, channel info, and comments
+- Use the search bar to find videos by keywords.
+- Click on recommended videos to navigate to their pages
+- Toggle between light and dark themes using the icon in the navbar
+
+👩‍💻 Developed by [Asmaa Abdo](https://github.com/asmaa-abdo22) 
+
+
+

@@ -3,6 +3,9 @@
 WatchZone is a modern video streaming platform clone built with **React**, **Tailwind CSS**, and **React Query**. It allows users to browse, search, and watch videos, view channel information, and explore recommended videos.
 
 ---
+## 🚀 Live Demo 
+🔗 [Click here to view the demo](https://watchzone-asmaa.netlify.app/) 
+
 
 ## Features
 
